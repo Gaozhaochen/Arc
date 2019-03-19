@@ -3,15 +3,18 @@
 
 2. 查看仓库的状态
 git status
+
 ![](https://i.imgur.com/E4cJFu8.png)
 
 3. 向暂存区添加文件
 git add
 如果只是创建文件，该文件并不会记入Git仓库的版本管理对象，须要使用指令加入暂存区
+
 ![](https://i.imgur.com/ATKmi03.png)
 
 4. 保存仓库的历史记录`
 git commit 指令可以将当前暂存区中的文件保存到仓库的历史记录中；
+
 ![](https://i.imgur.com/LcWViEF.png)
 
 5. 查看更改前后的差别
@@ -25,6 +28,7 @@ git branch
 2. 创建、切换分支
  git branch branch_1 
  git checkout branch_1
+
 ![](https://i.imgur.com/PnGOnrm.png)
 或者是： git checkout -b branch_1
 
@@ -34,6 +38,7 @@ git branch -d iss53
 4. 合并分支
 git merge
 合并到master分支时，首先切换到master分支； 在合并时加上--no-ff参数；
+
 ![](https://i.imgur.com/DPp1DtK.png)
 
 5. 以图表形式查看分支
@@ -42,6 +47,7 @@ git log --graph
 6. 回溯历史版本
 git reflog 查看当前仓库执行过的操作日志； 
 git reset  --hard 恢复到回溯历史的状态；
+
 ![](https://i.imgur.com/G6HsD5Y.png)
 
 7. 修改提交信息
@@ -50,6 +56,7 @@ git commit -amend
 8. 两次提交合并
 git rebase -i HEAD~2
 将pick部分删除，改写为fixup
+
 ![](https://i.imgur.com/pLxvBad.png)
 ![](https://i.imgur.com/FQ1QQ3u.png)
 
